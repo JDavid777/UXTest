@@ -45,11 +45,23 @@ class AppController extends Controller
             'enableBeforeRedirect' => false,
         ]);
         $this->loadComponent('Flash');
-        $this->loadComponent('Auth',['authorize' => ['Controller'],
-            'loginAction' => [ 'controller'=> 'Users', 'action'=>'login'],
-            'authError'=> 'Datos no validos',
-            'loginRedirect'=> ['controller'=>'Users','action'=> 'home'],
-            'logoutRedirect' => ['controller'=>'Users','actions'=>'login']]);
+        $this->loadComponent('Auth',[
+            'authorize' => ['Controller'],
+            'authenticate' => ['Form'],
+            'loginAction' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ],
+            'authError' => 'Ingrese sus datos',
+            'loginRedirect' => [
+                'controller' => 'Users',
+                'action' => 'home'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Users',
+                'action' => 'logout'
+            ]
+        ]);
 
 
         /*
