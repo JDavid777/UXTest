@@ -91,6 +91,8 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->fallbacks(DashedRoute::class);
 });
 
+$routes->connect('/users/login', ['controller' => 'Users', 'action' => 'login','login']);
+
 /**
  * If you need a different set of middleware or none at all,
  * open new scope and define routes there.
