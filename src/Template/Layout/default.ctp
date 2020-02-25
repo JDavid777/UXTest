@@ -22,17 +22,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<title>EngineHosting</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
 	<!-- Framework Css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/lib/bootstrap.min.css">
 	<!-- Font Awesome / Icon Fonts -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/lib/font-awesome.min.css">
 	<!-- Owl Carousel / Carousel- Slider -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/lib/owl.carousel.min.css">
 	<!-- Animations -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/animations.min.css">
+	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/lib/animations.min.css">
 	<!-- Style Theme -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/style.css">
 	<!-- Responsive Theme -->
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/responsive.css">
 </head>
 <body>
     
@@ -76,7 +76,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 			</ul>
 		</div><!--widget-footer-->
 		<div class="widget-footer last">
-			<a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+			<a href="index.html"><img src="/UXTest/img/imagesUxtest/logo.svg" alt="logo"></a>
 			<p>There are many variations of passages of Lorem Ipsum </p>
 			<ul class="social-icon">
 				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -89,12 +89,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		</div><!--copyright-->
     </div>
     </footer>  
-<script src="assets/js/lib/jquery.js"></script>
-<script src="assets/js/lib/bootstrap.min.js"></script>
-<script src="assets/js/lib/owl.carousel.min.js"></script>
-<script src="assets/js/lib/css3-animate-it.js"></script>
-<script src="assets/js/lib/counter.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="/UXTest/js/jsUxtest/lib/jquery.js"></script>
+<script src="/UXTest/js/jsUxtest/lib/bootstrap.min.js"></script>
+<script src="/UXTest/js/jsUxtest/lib/owl.carousel.min.js"></script>
+<script src="/UXTest/js/jsUxtest/lib/css3-animate-it.js"></script>
+<script src="/UXTest/js/jsUxtest/lib/counter.js"></script>
+<script src="/UXTest/js/jsUxtest/main.js"></script>
 </body>
 
 </html>

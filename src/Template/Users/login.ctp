@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-				<div class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a></div>
+				<div class="logo"><a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a></div>
 			</div>
 			<div class="col-md-7">
 				<ul class="menu">
@@ -45,12 +45,12 @@
 		</div>
 	</div>
 	<div class="mobile-block">
-		<div class="logo-mobile"><a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a></div>
+		<div class="logo-mobile"><a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a></div>
 		<a href="#" class="mobile-menu-btn"><span></span></a>
 		<div class="mobile-menu">
 			<div class="inside">
 				<div class="logo">
-					<a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+					<a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a>
 				</div><!--logo-->
 				<ul class="menu panel-group" id="accordion" aria-multiselectable="true">
 					<li><a href="index.html">Home</a></li>

@@ -5,17 +5,17 @@
 	<title>EngineHosting</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
 	<!-- Framework Css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesUxtest/lib/bootstrap.min.css">
 	<!-- Font Awesome / Icon Fonts -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesUxtest/lib/font-awesome.min.css">
 	<!-- Owl Carousel / Carousel- Slider -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesUxtest/lib/owl.carousel.min.css">
 	<!-- Animations -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/animations.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesUxtest/lib/animations.min.css">
 	<!-- Style Theme -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesUxtest/style.css">
 	<!-- Responsive Theme -->
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesUxtest/responsive.css">
 </head>
 <body>
 <div class="wrapper">
@@ -24,7 +24,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-				<div class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a></div>
+				<div class="logo"><a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a></div>
 			</div>
 			<div class="col-md-7">
 				<ul class="menu">
@@ -68,12 +68,12 @@
 		</div>
 	</div>
 	<div class="mobile-block">
-		<div class="logo-mobile"><a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a></div>
+		<div class="logo-mobile"><a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a></div>
 		<a href="#" class="mobile-menu-btn"><span></span></a>
 		<div class="mobile-menu">
 			<div class="inside">
 				<div class="logo">
-					<a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+					<a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a>
 				</div><!--logo-->
 				<ul class="menu panel-group" id="accordion" aria-multiselectable="true">
 					<li><a href="index.html">Home</a></li>
@@ -110,7 +110,7 @@
 	<!--===================== Base Slider ========================-->
 	<div class="base-slider owl-carousel owl-theme bg-gray">
 		<div class="item">
-			<img src="assets/images/bg-test.png" alt="slider">
+			<img src="img/imagesUxtest/bg-test.png" alt="slider">
 			<div class="inside">
 				<h2>Best Web Hosting For Your Website</h2>
 				<p>get best speed for your website. dont loose more clients.</p>
@@ -118,7 +118,7 @@
 			</div><!--inside-->
 		</div>
 		<div class="item">
-			<img src="assets/images/bg-test.png" alt="slider">
+			<img src="img/imagesUxtest/bg-test.png" alt="slider">
 			<div class="inside">
 				<h2>Best Web Hosting For Your Website</h2>
 				<p>get best speed for your website. dont loose more clients.</p>
@@ -133,11 +133,11 @@
 			<div class="partner animatedParent">
 				<h5>Trusted by 150,000+ happy customers worldwide</h5>
 				<div class="partner-slider owl-carousel owl-theme">
-					<div class="item animated bounceInLeft delay-250"><a href="#"><img src="assets/images/brand.png" alt="partner"></a></div>
-					<div class="item animated bounceInLeft delay-500"><a href="#"><img src="assets/images/brand.png" alt="partner"></a></div>
-					<div class="item animated bounceInLeft delay-750"><a href="#"><img src="assets/images/brand.png" alt="partner"></a></div>
-					<div class="item animated bounceInLeft delay-1000"><a href="#"><img src="assets/images/brand.png" alt="partner"></a></div>
-					<div class="item animated bounceInLeft delay-1250"><a href="#"><img src="assets/images/brand.png" alt="partner"></a></div>
+					<div class="item animated bounceInLeft delay-250"><a href="#"><img src="img/imagesUxtest/brand.png" alt="partner"></a></div>
+					<div class="item animated bounceInLeft delay-500"><a href="#"><img src="img/imagesUxtest/brand.png" alt="partner"></a></div>
+					<div class="item animated bounceInLeft delay-750"><a href="#"><img src="img/imagesUxtest/brand.png" alt="partner"></a></div>
+					<div class="item animated bounceInLeft delay-1000"><a href="#"><img src="img/imagesUxtest/brand.png" alt="partner"></a></div>
+					<div class="item animated bounceInLeft delay-1250"><a href="#"><img src="img/imagesUxtest/brand.png" alt="partner"></a></div>
 				</div>
 			</div>
 			<!--===================== End of Partner ========================-->
@@ -147,26 +147,26 @@
 				<div class="row">
 					<div class="col-md-4 col-xs-12 animated bounceInUp delay-250">
 						<div class="inside">
-							<img src="assets/images/optimised.svg" alt="optimised">
+							<img src="img/imagesUxtest/optimised.svg" alt="optimised">
 							<a href="#">Totaly Optimised</a>
 							<p>Our wordpress theme is totaly optimised for you needs. Very fast and responsive website convert your traffic to new customers.</p>
-							<a href="#" class="read-more">Learn More <img src="assets/images/right.png" alt="right"></a>
+							<a href="#" class="read-more">Learn More <img src="img/imagesUxtest/right.png" alt="right"></a>
 						</div><!--inside-->
 					</div>
 					<div class="col-md-4 col-xs-12 animated bounceInUp delay-500">
 						<div class="inside">
-							<img src="assets/images/powerfull.svg" alt="powerfull">
+							<img src="img/imagesUxtest/powerfull.svg" alt="powerfull">
 							<a href="#">Powerful Features</a>
 							<p>Our theme get everything you need to work with your hosting website. Its fresh, brandly new and with awesome customizing features. </p>
-							<a href="#" class="read-more">Learn More <img src="assets/images/right.png" alt="right"></a>
+							<a href="#" class="read-more">Learn More <img src="img/imagesUxtest/right.png" alt="right"></a>
 						</div><!--inside-->
 					</div>
 					<div class="col-md-4 col-xs-12 animated bounceInUp delay-750">
 						<div class="inside">
-							<img src="assets/images/website.svg" alt="website">
+							<img src="img/imagesUxtest/website.svg" alt="website">
 							<a href="#">Worldwide Support</a>
 							<p>We will do suppor to your theme almost 24/7. If you get some bugs or have some problems - just simply write to us. </p>
-							<a href="#" class="read-more">Learn More <img src="assets/images/right.png" alt="right"></a>
+							<a href="#" class="read-more">Learn More <img src="img/imagesUxtest/right.png" alt="right"></a>
 						</div><!--inside-->
 					</div>
 				</div>
@@ -192,7 +192,7 @@
 			<p>High Performance cPanel WHM Reseller Hosting in Europe</p>
 			<ul class="pricing-list">
 				<li class="animated bounceInLeft delay-250">
-					<div class="images"><img src="assets/images/server.svg" alt="server"></div>
+					<div class="images"><img src="img/imagesUxtest/server.svg" alt="server"></div>
 					<h5>Dedicated Server</h5>
 					<p>There are many variations of passages of Lorem Ipsum available.</p>
 					<span><b>From</b></span>
@@ -200,7 +200,7 @@
 					<a href="service-page.html" class="custom-btn">Get Started Now</a>
 				</li>
 				<li class="animated bounceInLeft delay-500">
-					<div class="images"><img src="assets/images/hosting.svg" alt="hosting"></div>
+					<div class="images"><img src="img/imagesUxtest/hosting.svg" alt="hosting"></div>
 					<h5>Reseller Hosting</h5>
 					<p>There are many variations of passages of Lorem Ipsum available.</p>
 					<span><b>From</b></span>
@@ -208,7 +208,7 @@
 					<a href="service-page.html" class="custom-btn">Get Started Now</a>
 				</li>
 				<li class="animated bounceInLeft delay-750">
-					<div class="images"><img src="assets/images/hosting2.svg" alt="hosting2"></div>
+					<div class="images"><img src="img/imagesUxtest/hosting2.svg" alt="hosting2"></div>
 					<h5>Shared Hosting</h5>
 					<p>There are many variations of passages of Lorem Ipsum available.</p>
 					<span><b>From</b></span>
@@ -216,7 +216,7 @@
 					<a href="service-page.html" class="custom-btn">Get Started Now</a>
 				</li>
 				<li class="animated bounceInLeft delay-1000">
-					<div class="images"><img src="assets/images/vps.svg" alt="vpn"></div>
+					<div class="images"><img src="img/imagesUxtest/vps.svg" alt="vpn"></div>
 					<h5>VPS Hosting</h5>
 					<p>There are many variations of passages of Lorem Ipsum available.</p>
 					<span><b>From</b></span>
@@ -255,12 +255,12 @@
 		<div class="slider owl-carousel owl-theme">
 			<div class="item">
 				<div class="inside">
-					<img src="assets/images/icon.svg" class="icon" alt="icon">
-					<img src="assets/images/brand.png" alt="logo-tesla">
+					<img src="img/imagesUxtest/icon.svg" class="icon" alt="icon">
+					<img src="img/imagesUxtest/brand.png" alt="logo-tesla">
 					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
 					<div class="user">
 						<a href="#">
-							<img src="assets/images/user.png" alt="user">
+							<img src="img/imagesUxtest/user.png" alt="user">
 							Oliver Mitchell
 							<span>Manager at Lorem Ipsum</span>
 						</a>
@@ -269,12 +269,12 @@
 			</div>
 			<div class="item">
 				<div class="inside">
-					<img src="assets/images/icon.svg" class="icon" alt="icon">
-					<img src="assets/images/brand.png" alt="logo-tesla">
+					<img src="img/imagesUxtest/icon.svg" class="icon" alt="icon">
+					<img src="img/imagesUxtest/brand.png" alt="logo-tesla">
 					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
 					<div class="user">
 						<a href="#">
-							<img src="assets/images/user.png" alt="user">
+							<img src="img/imagesUxtest/user.png" alt="user">
 							Oliver Mitchell
 							<span>Manager at Lorem Ipsum</span>
 						</a>
@@ -285,7 +285,7 @@
 	</div>
 </div>
 <!--===================== End of User Slider ========================-->
-	<div class="pre-footer"><img src="assets/images/line-prefoter.svg" alt="bg-prefooter"></div> 
+	<div class="pre-footer"><img src="img/imagesUxtest/line-prefoter.svg" alt="bg-prefooter"></div> 
 <!--===================== Search Domain ========================-->
 <div class="search-domain animatedParent">
 	<div class="container animated fadeInUpShort">
