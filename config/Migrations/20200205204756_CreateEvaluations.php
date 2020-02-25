@@ -60,6 +60,8 @@ class CreateEvaluations extends AbstractMigration
             'default' => null,
             'null' => false,
         ]);
+        
+        $table->addColumn('users_tests_id', 'string')->addForeignKey('users_tests_id', 'tests','id', ['delete'=>'CASCADE', 'update'=>'CASCADE']);
         $table->create();
     }
 }

@@ -31,6 +31,8 @@ class CreateQuestions extends AbstractMigration
             'default' => null,
             'null' => false,
         ]);
+
+        $table->addColumn('test_id', 'string')->addForeignKey('test_id', 'tests','id', ['delete'=>'CASCADE', 'update'=>'CASCADE']);
         $table->create();
     }
 }
