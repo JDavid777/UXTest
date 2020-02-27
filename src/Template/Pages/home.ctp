@@ -53,16 +53,8 @@
 			</div>
 			<div class="col-md-3">
 				<div class="button-header">
-
-                    <?= $this->Form->create()?>
-
-
                     <a href="users/login" class="custom-btn login">Login</a>
-                    <?= $this->Form->button('Login',['class' => 'btn btn-primary','href'=>'users/home']);?>
-                    <?= $this->Form->end()?>
-
-
-					<a href="sign-up.html" class="custom-btn">Sign Up</a>
+					<!--<a href="sign-up.html" class="custom-btn">Sign Up</a>-->
 				</div>
 			</div>
 		</div>
@@ -100,7 +92,7 @@
 				</ul><!--menu-->
 				<div class="button-header">
 					<a href="/UXTest/users/login" class="custom-btn login">Login</a>
-					<a href="#" class="custom-btn">Sign Up</a>
+					<!--<a href="#" class="custom-btn">Sign Up</a>-->
 				</div><!--button-header-->
 			</div><!--inside-->
 		</div><!--mobile-menu-->

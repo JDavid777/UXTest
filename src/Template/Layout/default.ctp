@@ -22,20 +22,32 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<title>EngineHosting</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
 	<!-- Framework Css -->
-	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/lib/bootstrap.min.css">
+	<?php echo $this->Html->css('stylesUxtest/lib/bootstrap.min');?>
 	<!-- Font Awesome / Icon Fonts -->
-	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/lib/font-awesome.min.css">
+	<?php echo $this->Html->css('stylesUxtest/lib/font-awesome.min');?>
 	<!-- Owl Carousel / Carousel- Slider -->
-	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/lib/owl.carousel.min.css">
+	<?php echo $this->Html->css('stylesUxtest/lib/owl.carousel.min');?>
 	<!-- Animations -->
-	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/lib/animations.min.css">
+	<?php echo $this->Html->css('stylesUxtest/lib/animations.min');?>
 	<!-- Style Theme -->
-	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/style.css">
+	<?php echo $this->Html->css('stylesUxtest/style.css');?>
+
 	<!-- Responsive Theme -->
-	<link rel="stylesheet" type="text/css" href="/UXTest/css/stylesUxtest/responsive.css">
+	<?php echo $this->Html->css('stylesUxtest/responsive');?>
+
+
+
+	<?= $this->Html->meta('icon') ?>
+
+	<?= $this->Html->css('bootstrap.min.css')?>
+	<?= $this->Html->script('bootstrap.min.js')?>
+
+	<?= $this->fetch('meta') ?>
+	<?= $this->fetch('css') ?>
+	<?= $this->fetch('script') ?>
 </head>
 <body>
-    
+<div class="wrapper">
     <?= $this->Flash->render() ?>
     <?= $this->fetch('content') ?>
 
@@ -87,14 +99,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		<div class="copyright">
 			<p>&copy; Copyright 2017 Hosting, All Rights Reserved</p>
 		</div><!--copyright-->
-    </div>
-    </footer>  
-<script src="/UXTest/js/jsUxtest/lib/jquery.js"></script>
-<script src="/UXTest/js/jsUxtest/lib/bootstrap.min.js"></script>
-<script src="/UXTest/js/jsUxtest/lib/owl.carousel.min.js"></script>
-<script src="/UXTest/js/jsUxtest/lib/css3-animate-it.js"></script>
-<script src="/UXTest/js/jsUxtest/lib/counter.js"></script>
-<script src="/UXTest/js/jsUxtest/main.js"></script>
+	</footer>  
+
+	</div><!--wrapper-->
+	<?php echo $this->Html->script('jsUxtest/lib/jquery');?>
+	<?php echo $this->Html->script('jsUxtest/lib/bootstrap.min');?>
+	<?php echo $this->Html->script('jsUxtest/lib/owl.carousel.min');?>
+	<?php echo $this->Html->script('jsUxtest/lib/css3-animate-it');?>
+	<?php echo $this->Html->script('jsUxtest/lib/counter');?>
+	<?php echo $this->Html->script('jsUxtest/main');?>
+	
 </body>
 
 </html>

@@ -1,15 +1,11 @@
-<?php
-
-?>
-
 <body class="login-page">
 <div class="wrapper">
 	<!--===================== Header ========================-->
-<header>
+    <header>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-				<div class="logo"><a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a></div>
+				<div class="logo"><a href="index.html"><img src="/UXTest/img/imagesUxtest/logo.svg" alt="logo"></a></div>
 			</div>
 			<div class="col-md-7">
 				<ul class="menu">
@@ -38,19 +34,19 @@
 			</div>
 			<div class="col-md-3">
 				<div class="button-header">
-					<a href="/UXTest/users/login" class="custom-btn login">Login</a>
-					<a href="sign-up.html" class="custom-btn">Sign Up</a>
+					<a href="login.html" class="custom-btn login">Login</a>
+					<!--<a href="sign-up.html" class="custom-btn">Sign Up</a>-->
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="mobile-block">
-		<div class="logo-mobile"><a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a></div>
+		<div class="logo-mobile"><a href="index.html"><img src="/UXTest/img/imagesUxtest/logo.svg" alt="logo"></a></div>
 		<a href="#" class="mobile-menu-btn"><span></span></a>
 		<div class="mobile-menu">
 			<div class="inside">
 				<div class="logo">
-					<a href="index.html"><img src="img/imagesUxtest/logo.svg" alt="logo"></a>
+					<a href="index.html"><img src="/UXTest/img/imagesUxtest/logo.svg" alt="logo"></a>
 				</div><!--logo-->
 				<ul class="menu panel-group" id="accordion" aria-multiselectable="true">
 					<li><a href="index.html">Home</a></li>
@@ -77,24 +73,24 @@
 				</ul><!--menu-->
 				<div class="button-header">
 					<a href="/UXTest/users/login" class="custom-btn login">Login</a>
-					<a href="#" class="custom-btn">Sign Up</a>
+					<!--<a href="#" class="custom-btn">Sign Up</a>-->
 				</div><!--button-header-->
 			</div><!--inside-->
 		</div><!--mobile-menu-->
 	</div>
 </header>
 <!--===================== End of Header ========================-->
-	<!--===================== Login Bg ========================-->
 
-<?= $this->Form->create()?>
-    
-    <div class="login-bg animatedParent animated growIn">
-
-            <?= $this->Form->input('username',['class'=> 'form-control mb-2','placeholder'=> ['Nombre de Usuario','label' => false, 'required']]);?>  
-            <?= $this->Form->input('password',['class'=> 'form-control mb-2','placeholder'=> ['Contraseña','label' => false, 'required']]);?>
-            <?= $this->Form->button('Ingresar',['class' => 'btn btn-primary']);?>
+    <div class="login-bg animatedParent">
+        <?= $this->Form->create()?>
+            <div class="animated growIn">
+                <?= $this->Form->input('username',['class'=> 'form-group','placeholder'=> ['Nombre de Usuario','label' => false, 'required']]);?>  
+                <?= $this->Form->input('Password',['class'=> 'form-group','placeholder'=> ['Contraseña','label' => false, 'required']]);?> <!--- Todo buscar solucion al usar password-->
+                <?= $this->Form->button('Ingresar',['class' => 'btn btn-primary form-group']);?>     
+            </div>
+        <?= $this->Form->end()?>
     </div>
-<?= $this->Form->end()?>
-<?= $this->Flash->render('auth')?>
+    <?= $this->Flash->render('auth')?>
 
+</div>
 </body>
