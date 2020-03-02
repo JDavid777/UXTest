@@ -19,7 +19,7 @@ class UsersController extends AppController
                 return $this->redirect($this->Auth->redirectUrl());
             }
             else{
-                $this->Flash->error("Por favor ingresar datos validos",['key'=>'auth']);
+                $this->Flash->error("Por favor ingresar datos válidos",['key'=>'auth']);
             }
         }
     }

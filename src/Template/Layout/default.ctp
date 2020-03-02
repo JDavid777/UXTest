@@ -19,7 +19,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>EngineHosting</title>
+	<title>UXTest</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
 	<!-- Framework Css -->
 	<?php echo $this->Html->css('stylesUxtest/lib/bootstrap.min');?>
@@ -58,33 +58,30 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		<div class="widget-footer">
 			<h4>Product</h4>
 			<ul>
-				<li><a href="service-page.html">Web Hosting</a></li>
-				<li><a href="service-page.html">Shared Hosting</a></li>
-				<li><a href="service-page.html">Dedicated Server</a></li>
-				<li><a href="service-page.html">Private Cloud</a></li>
+				<li><a href="">Usability Tester</a></li>
 			</ul>
 		</div><!--widget-footer-->
 		<div class="widget-footer">
 			<h4>Company</h4>
 			<ul>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="service-page.html">Careers</a></li>
-				<li><a href="blog-list.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Careers</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Contact</a></li>
 			</ul>
 		</div><!--widget-footer-->
 		<div class="widget-footer">
 			<h4>Support</h4>
 			<ul>
-				<li><a href="service-page.html">FAQ</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="">Contact Us</a></li>
 			</ul>
 		</div><!--widget-footer-->
 		<div class="widget-footer">
 			<h4>Contact Us</h4>
 			<ul>
-				<li><a href="#">+123-333-123</a></li>
-				<li><a href="#">support@enginehosting.com</a></li>
+				<li><a href="#">+57-123-456-7890</a></li>
+				<li><a href="#">support@uxtest.com</a></li>
 			</ul>
 		</div><!--widget-footer-->
 		<div class="widget-footer last">
