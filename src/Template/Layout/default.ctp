@@ -85,7 +85,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 			</ul>
 		</div><!--widget-footer-->
 		<div class="widget-footer last">
-			<a href="index.html"><img src="/UXTest/img/imagesUxtest/logo.svg" alt="logo"></a>
+			<a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
 			<p>There are many variations of passages of Lorem Ipsum </p>
 			<ul class="social-icon">
 				<li><a href="#"><i class="fa fa-facebook"></i></a></li>

@@ -195,6 +195,17 @@ iframe {
  */
 /* 01. Global Style
    ==================================== */
+  .btn-circle {
+    width: 15px;
+    height: 15px;
+    text-align: top;
+    padding: 3px 0;
+    font-size: 11px;
+    line-height: 0.8;
+    border-radius: 8px;
+    border-color: #BFBFBF;
+    
+  }
    .container-fluid {
     max-width: 1300px;
   }
@@ -535,7 +546,7 @@ header .button-header .custom-btn:hover {
 }
 
 .bigimg{
-  width: 300px; height: 300px;
+  width: 350px; height: 410px;
 }
 .smallimg {
   width: 150px; height: 150px;

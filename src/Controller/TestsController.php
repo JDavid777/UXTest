@@ -20,23 +20,18 @@ class TestsController extends AppController
     }
 
     public function enviarEmail(){
-        $email = new Email('default');
-        $email->from(['me@example.com' => 'UXTest'])
-                ->to('you@example.com')
-                ->subject('About')
-                ->send('My message');
 
-        $correos = explode(", ", $_POST["destinatarios"]);
-        $mensaje = $_POST["mensaje"];
-        $url = "www.uxtest/encuesta";
-        foreach ($correos as $correo){
-            $email->from(['me@example.com' => 'UXTest'])
+        $correos = array('mariaft@unicauca.edu.co','dmpino216@unicauca.edu.co','jdgarcia216@unicauca.edu.co', 'faberps@unicauca.edu.co', 'acmeneses@unicauca.edu.co');
+        $email = new Email('default');
+        foreach ($correos as $correo) {
+            $email->from(['mariaft@unicauca.edu.co' => 'UXTest'])
                 ->to($correo)
-                ->subject('Test usabilidad')
-                ->send($mensaje ." \n". $url);
-            mail($correo, "Test usabilidad", $mensaje ." \n". $url);
+                ->subject('Test SUS')
+                ->send("¡Hola!\n
+                Te invitamos a evaluar la usabilidad de www.mercadolibre.com.co a través del siguiente link: www.uxtest/testsus.com\n
+                Fecha límite: 25/03/2020");
         }
-        
+        $this->render();
     }
 
 }

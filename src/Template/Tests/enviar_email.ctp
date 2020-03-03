@@ -57,9 +57,6 @@
 							<li><a href="users/logout">Salir</a></li>
 						</ul>
 
-
-
-
 					</div>
 					<!--inside-->
 				</div>
@@ -68,45 +65,9 @@
 		</header>
 		<!--===================== End of Header ========================-->
 		<div class="wrapper1">
-			<div class="container-fluid">
-
-				<p class="h1 text-center">Test SUS</p>
-				<div class="row ">
-
-					<div class="col-md-5 ">
-						<img class="media-object bigimg center-block" src="/UXTest/img/imagesUxtest/icon-testsus.png" alt="...">
-					</div>
-
-					<div class="col-md-5 justify-content-center">
-
-						<form action="enviarEmail" method="POST">
-							<div class="form-group">
-								<label for="url-page">URL página a evaluar</label>
-								<input type="text" class="form-control" id="url-page" placeholder="URL">
-							</div>
-							<div class="form-group">
-								<label for="#">Destinatarios</label>
-								<input type="email" name="data[destinatarios]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mails">
-								<small id="emailHelp" class="form-text text-muted">Nunca compartiremos sus correos electrónicos con nadie más</small>
-							</div>
-							<div class="form-group">
-								<label for="#">Fecha</label>
-								<input type="text" name="#" class="form-control" id="#" aria-describedby="#" placeholder="Ingrese la fecha (dd/mm/aaaa)">
-							</div>
-
-							<div class="form-group">
-								<label for="exampleFormControlTextarea1">Mensaje</label>
-								<textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
-							</div>
-							<input type="submit" class="btn btn-primary pull-right" value="Enviar" id="botonEnviar">
-							
-						</form>
-					</div>
-
-
-				</div>
-
-			</div>
+			
+				<p class="h1 text-center">¡Correo enviado exitosamente!</p>
+			
 
 		</div> <!-- end container -->
 	</div>

@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<div class="logo"><a href=""><img src="/UXTest/img/imagesUxtest/logo.svg" alt="logo"></a></div>
+						<div class="logo"><a href=""><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
 						
 					</div>
 					<div class="col-md-7">
@@ -24,7 +24,7 @@
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
 										<a class="dropdown-item" href="#"><i class="dripicons-user text-muted"></i> Perfil</a>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#"><i class="dripicons-exit text-muted"></i> Salir</a>
+										<a class="dropdown-item" href="../users/logout"><i class="dripicons-exit text-muted"></i> Salir</a>
 									</div>
 								</li>
 
@@ -36,12 +36,12 @@
 			</div>
 
 			<div class="mobile-block">
-				<div class="logo-mobile"><a href="index.html"><img src="/UXTest/img/imagesUxtest/logo.svg" alt="logo"></a></div>
+				<div class="logo-mobile"><a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
 				<a href="#" class="mobile-menu-btn"><span></span></a>
 				<div class="mobile-menu">
 					<div class="inside">
 						<div class="logo">
-							<a href="index.html"><img src="/UXTest/img/imagesUxtest/logo.svg" alt="logo"></a>
+							<a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
 						</div>
 						<!--logo-->
 
