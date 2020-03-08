@@ -49,7 +49,6 @@
 						</div>
 						<!--logo-->
 
-
 						<!-- Search input -->
 						<ul class="menu panel-group" id="accordion" aria-multiselectable="true">
 							<li><span class="d-none d-md-inline-block ml-1 text-white">Donald T. <i class="mdi mdi-chevron-down"></i> </span></li>
@@ -78,29 +77,26 @@
 					</div>
 
 					<div class="col-md-5 justify-content-center">
+						
+						<?= $this->Form->create(null, ['url' => ['action' => 'enviar_email']])?>
+							<div class="form-group">
+								<?= $this->Form->input('text',['class'=> 'form-control','name'=> 'url', 'placeholder'=> 'URL','label' => 'URL página a evaluar', 'required']);?>
+							</div>
+							<div class="form-group">
+								<?= $this->Form->input('text',['class'=> 'form-control','name'=> 'destinatarios', 'placeholder'=> 'Destinatarios','label' => 'Destinatarios', 'required']);?>
+							</div>
+							<div class="form-group">
+								<?= $this->Form->input('date',['class'=> 'form-control','name'=> 'fecha', 'placeholder'=> 'Fecha límite','label' => 'Fecha límite', 'required']);?>
+							</div>
+							<div class="form-group">
+								<label for="txtmensaje">Mensaje</label>
+								<?= $this->Form->textarea('txtmensaje', ['class'=> 'form-control rounded-0','id'=> 'txtmensaje', 'rows' => '10', 'placeholder'=> 'Mensaje','label' => 'Mensaje', 'required']);?>
+							</div>
 
-						<form action="enviarEmail" method="POST">
-							<div class="form-group">
-								<label for="url-page">URL página a evaluar</label>
-								<input type="text" class="form-control" id="url-page" placeholder="URL">
-							</div>
-							<div class="form-group">
-								<label for="#">Destinatarios</label>
-								<input type="email" name="data[destinatarios]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mails">
-								<small id="emailHelp" class="form-text text-muted">Nunca compartiremos sus correos electrónicos con nadie más</small>
-							</div>
-							<div class="form-group">
-								<label for="#">Fecha</label>
-								<input type="text" name="#" class="form-control" id="#" aria-describedby="#" placeholder="Ingrese la fecha (dd/mm/aaaa)">
-							</div>
+							<?= $this->Form->button('Enviar Encuesta',['class'=> 'btn btn-primary pull-right']);?>
 
-							<div class="form-group">
-								<label for="exampleFormControlTextarea1">Mensaje</label>
-								<textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
-							</div>
-							<input type="submit" class="btn btn-primary pull-right" value="Enviar" id="botonEnviar">
-							
-						</form>
+						<?= $this->Form->end()?>
+				
 					</div>
 
 

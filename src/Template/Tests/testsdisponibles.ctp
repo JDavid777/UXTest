@@ -5,8 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<div class="logo"><a href=""><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
-						
+						<div class="logo"><a href=""><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>s
 					</div>
 					<div class="col-md-7">
 					
@@ -27,9 +26,7 @@
 										<a class="dropdown-item" href="../users/logout"><i class="dripicons-exit text-muted"></i> Salir</a>
 									</div>
 								</li>
-
 							</ul>
-
 						</div>
 					</div>
 				</div>
@@ -41,7 +38,7 @@
 				<div class="mobile-menu">
 					<div class="inside">
 						<div class="logo">
-							<a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
+							<a href=""><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
 						</div>
 						<!--logo-->
 
