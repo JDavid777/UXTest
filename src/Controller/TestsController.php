@@ -22,7 +22,8 @@ class TestsController extends AppController
     public function enviarEmail(){
 
         $this->loadModel("UsersTests");
-        $user_test = $this->UsersTests->newEntity();
+        $user_test = $this->UsersTests->newEntity($this->request->getData());
+        $this->UsersTests->save($user_test);
         
         if($this->request->is('post')){
 

@@ -12,12 +12,7 @@ class CreateQuestions extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('questions', ['id' => false, 'primary_key' => ['id']]);
-        $table->addColumn('id', 'string', [
-            'default' => null,
-            'limit' => 30,
-            'null' => false,
-        ]);
+        $table = $this->table('questions');
         $table->addColumn('description', 'string', [
             'default' => null,
             'limit' => 250,

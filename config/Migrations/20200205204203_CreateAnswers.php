@@ -12,12 +12,7 @@ class CreateAnswers extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('answers', ['id' => false, 'primary_key' => ['id']]);
-        $table->addColumn('id', 'string', [
-            'default' => null,
-            'limit' => 50,
-            'null' => false,
-        ]);
+        $table = $this->table('answers');
         $table->addColumn('value', 'string', [
             'default' => null,
             'limit' => 100,
