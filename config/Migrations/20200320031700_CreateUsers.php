@@ -12,7 +12,12 @@ class CreateUsers extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('users');
+        $table = $this->table('users', ['id' => false, 'primary_key' => ['id']]);
+        $table->addColumn('id', 'integer', [
+            'default' => null,
+            'limit' => 12,
+            'null' => false,
+        ]);
         $table->addColumn('first_name', 'string', [
             'default' => null,
             'limit' => 50,
@@ -51,6 +56,6 @@ class CreateUsers extends AbstractMigration
             'default' => null,
             'null' => false,
         ]);
-        $table->create();
+        $table->save();
     }
 }

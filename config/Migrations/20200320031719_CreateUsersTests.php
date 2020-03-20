@@ -32,6 +32,5 @@ class CreateUsersTests extends AbstractMigration
         $table->addColumn('test_id', 'string')->addForeignKey('test_id', 'tests','id', ['delete'=>'CASCADE', 'update'=>'CASCADE']);
         
         $table->create();
-
     }
 }

@@ -36,6 +36,6 @@ class CreateTests extends AbstractMigration
             'default' => null,
             'null' => false,
         ]);
-        $table->create();
+        $table->save();
     }
 }
