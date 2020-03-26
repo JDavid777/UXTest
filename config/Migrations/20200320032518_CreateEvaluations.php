@@ -29,23 +29,23 @@ class CreateEvaluations extends AbstractMigration
             'null' => false,
         ]);
         $table->addColumn('age', 'integer', [
-            'default' => null,
+            'default' => true,
             'limit' => 2,
             'null' => false,
         ]);
         $table->addColumn('gender', 'string', [
             'default' => null,
             'limit' => 1,
-            'null' => false,
+            'null' => true,
         ]);
         $table->addColumn('location', 'string', [
             'default' => null,
             'limit' => 200,
-            'null' => false,
+            'null' => true,
         ]);
         $table->addColumn('date', 'datetime', [
             'default' => null,
-            'null' => false,
+            'null' => true,
         ]);
         $table->addColumn('created', 'datetime', [
             'default' => null,

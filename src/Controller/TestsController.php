@@ -2,6 +2,7 @@
 namespace App\Controller;
 use Cake\Mailer\Email;
 use App\Controller\AppController;
+use Cake\Utility\Text;
 
 /**
  * Tests Controller
@@ -22,9 +23,8 @@ class TestsController extends AppController
     public function enviarEmail(){
 
         $this->loadModel("UsersTests");
-        $user_test = $this->UsersTests->newEntity($this->request->getData());
-        $this->UsersTests->save($user_test);
-        
+        $this->loadModel("Evaluations");
+        $user_test = $this->UsersTests->newEntity();
         if($this->request->is('post')){
 
             if(empty($user_test->getErrors())){
@@ -33,27 +33,37 @@ class TestsController extends AppController
                 $mensaje = $this->request->getData('txtmensaje');
                 $url = $this->request->getData('url');
                 $fecha = $this->request->getData('fecha');
-                $correos = explode(", ", $lineaCorreos);
-                $email = new Email('default');
-                foreach ($correos as $correo) {
-                        $email->from(['mariaft@unicauca.edu.co' => 'UXTest'])
-                            ->to($correo)
-                            ->subject('Test SUS')
-                            ->send("¡Hola!\n $mensaje
-                            \n URL Página: $url
-                            \n Fecha límite: ". $fecha);
-                }
-                $user_test->id = 'usertest 1';
+
+                //GUARDAR EN LA BD NUEVO USER_TEST
                 $user_test->url_app = $url;
                 $user_test->max_date = $fecha;
                 $user_test->message = $mensaje; 
-                $user_test->user_id = 1;
+                $user_test->user_id = $this->Auth->user('id');
                 $user_test->test_id = 'sus_test';
-                $this->UsersTests->save($user_test);
+                $saved_entity = $this->UsersTests->save($user_test);
+                $correos = explode(", ", $lineaCorreos);
+                $email = new Email('default');
+                //TODO: CONSTRUIR URL 
+                foreach ($correos as $correo) {
+                    $evaluation = $this->Evaluations->newEntity();
+                    $data = array(
+                        'email' => $correo,
+                        'token' => Text::uuid(),
+                        'active' => 1,
+                        'users_test_id' => $saved_entity->id
+                    );
+                    $evaluation = $this->Evaluations->patchEntity($evaluation, $data);
+                    $this->Evaluations->save($evaluation);
+                    $email->setFrom(['applicationuxtest@gmail.com' => 'Encuesta de UXTest'])
+                        ->setTo($correo)
+                        ->setSubject('Test SUS')
+                        ->send("¡Hola!\n $mensaje
+                        \n URL Página: $url
+                        \n Fecha límite: ". $fecha);
+                }
+
             }
         }
-        
         $this->render();
     }
-
 }

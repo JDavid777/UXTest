@@ -24,7 +24,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<!-- Framework Css -->
 	<?php echo $this->Html->css('stylesUxtest/lib/bootstrap.min');?>
 	<!-- Font Awesome / Icon Fonts -->
-	<?php echo $this->Html->css('stylesUxtest/lib/font-awesome.min');?>
+	<?php echo $this->Html->css('stylesUxTest/lib/font-awesome.min');?>
 	<!-- Owl Carousel / Carousel- Slider -->
 	<?php echo $this->Html->css('stylesUxtest/lib/owl.carousel.min');?>
 	<!-- Animations -->
@@ -39,8 +39,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 	<?= $this->Html->meta('icon') ?>
 
-	<?= $this->Html->css('bootstrap.min.css')?>
-	<?= $this->Html->script('bootstrap.min.js')?>
+	<?= $this->Html->css('stylesUxtest/lib/bootstrap.min.css')?>
+	<?= $this->Html->script('jsUxtest/lib/bootstrap.min.js')?>
 
 	<?= $this->fetch('meta') ?>
 	<?= $this->fetch('css') ?>
@@ -105,6 +105,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<?php echo $this->Html->script('jsUxtest/lib/css3-animate-it');?>
 	<?php echo $this->Html->script('jsUxtest/lib/counter');?>
 	<?php echo $this->Html->script('jsUxtest/main');?>
+	<?php echo $this->Html->script('jsUxtest/survey_func.js');?>
+	<?php echo $this->Html->script('jsUxtest/common_scripts.min.js');?>
 	
 </body>
 
