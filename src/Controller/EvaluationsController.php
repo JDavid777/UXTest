@@ -113,4 +113,9 @@ class EvaluationsController extends AppController
     {
         $this->render();
     }
+
+    public function beforeFilter(\Cake\Event\Event $event)
+    {
+        $this->Auth->allow("llenarEncuesta");
+    }
 }

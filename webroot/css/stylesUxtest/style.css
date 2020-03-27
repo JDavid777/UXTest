@@ -2788,7 +2788,7 @@ footer {
   background-color: rgba(119, 130, 170, 0.2);
 }
 .content-order input[type="radio"]:checked + label span {
-  background: url(../images/radio-check.png) no-repeat;
+  background: url(../../images/radio-check.png) no-repeat;
 }
 /* 03. Total Order
    ==================================== */

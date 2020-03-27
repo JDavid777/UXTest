@@ -76,24 +76,20 @@ class EvaluationsTable extends Table
 
         $validator
             ->integer('age')
-            ->requirePresence('age', 'create')
             ->notEmptyString('age');
 
         $validator
             ->scalar('gender')
             ->maxLength('gender', 1)
-            ->requirePresence('gender', 'create')
             ->notEmptyString('gender');
 
         $validator
             ->scalar('location')
             ->maxLength('location', 200)
-            ->requirePresence('location', 'create')
             ->notEmptyString('location');
 
         $validator
             ->dateTime('date')
-            ->requirePresence('date', 'create')
             ->notEmptyDateTime('date');
 
         return $validator;
@@ -108,7 +104,7 @@ class EvaluationsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['email']));
+        
         $rules->add($rules->existsIn(['users_tests_id'], 'UsersTests'));
 
         return $rules;

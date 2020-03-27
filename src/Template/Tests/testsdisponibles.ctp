@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<div class="logo"><a href=""><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>s
+						<div class="logo"><a href=""><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
 					</div>
 					<div class="col-md-7">
 					
@@ -18,7 +18,7 @@
 								<li class="list-inline-item dropdown notification-list">
 									<a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 										<img class="smalluser" src="/UXTest/img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
-										<span class="d-none d-md-inline-block text-white "><?$this->Auth->user('username')?><i class="mdi mdi-chevron-down"></i> </span>
+										<span class="d-none d-md-inline-block text-white "><?= $this->request->getSession()->read('Auth.User.first_name'). " " .$this->request->getSession()->read('Auth.User.last_name') ?><i class="mdi mdi-chevron-down"></i> </span>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
 										<a class="dropdown-item" href="#"><i class="dripicons-user text-muted"></i> Perfil</a>
@@ -44,7 +44,7 @@
 
 						<!-- Search input -->
 						<ul class="menu panel-group" id="accordion" aria-multiselectable="true">
-							<li><span class="d-none d-md-inline-block ml-1 text-white"><?$this->Auth->user('username')?><i class="mdi mdi-chevron-down"></i> </span></li>
+							<li><span class="d-none d-md-inline-block ml-1 text-white"><?= $this->request->getSession()->read('Auth.User.first_name'). " " .$this->request->getSession()->read('Auth.User.last_name') ?><i class="mdi mdi-chevron-down"></i> </span></li>
 							<li><a href="">Perfil</a></li>
 							<li><a href="users/logout">Salir</a></li>
 						</ul>
