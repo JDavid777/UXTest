@@ -79,7 +79,8 @@
 								<?= $this->Form->input('text',['class'=> 'form-control','name'=> 'url', 'placeholder'=> 'URL','label' => 'URL página a evaluar', 'required']);?>
 							</div>
 							<div class="form-group">
-								<?= $this->Form->input('text',['class'=> 'form-control','name'=> 'destinatarios', 'placeholder'=> 'Destinatarios','label' => 'Destinatarios', 'required']);?>
+								<?= $this->Form->input('text',['class'=> 'form-control','id'=>'inputxls','name'=> 'destinatarios', 'placeholder'=> 'Destinatarios','label' => 'Destinatarios', 'required']);?>
+								<input type="file" id="my_file_input" />
 							</div>
 							<div class="form-group">
 								<label for="fecha">Fecha límite</label>

@@ -38,10 +38,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 	<?= $this->Html->meta('icon') ?>
-
+	<?= $this->Html->script('jsUxtest/lib/jquery.js')?>
 	<?= $this->Html->css('stylesUxtest/lib/bootstrap.min.css')?>
 	<?= $this->Html->script('jsUxtest/lib/bootstrap.min.js')?>
-
 	<?= $this->fetch('meta') ?>
 	<?= $this->fetch('css') ?>
 	<?= $this->fetch('script') ?>
@@ -107,6 +106,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<?php echo $this->Html->script('jsUxtest/main');?>
 	<?php echo $this->Html->script('jsUxtest/survey_func.js');?>
 	<?php echo $this->Html->script('jsUxtest/common_scripts.min.js');?>
+	<?= $this->Html->script('jsUxtest/lib/xlsx.js')?>
+	<?= $this->Html->script('jsUxtest/lib/xls.js')?>
 	
 </body>
 
