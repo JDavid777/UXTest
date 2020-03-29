@@ -14,6 +14,7 @@ $(function() {
 
     reader.onload = function(e) {
       var data = e.target.result;
+      XLS
       var cfb = XLS.CFB.read(data, {
         type: 'binary'
       });
@@ -25,14 +26,20 @@ $(function() {
         var data = XLS.utils.sheet_to_json(wb.Sheets[sheetName], {
           header: 1
         });
-        var txt="";
+        var txt=" ";
+        var contador=0;
         $.each(data, function(indexR, valueR) {
-          var contador=0;
+          
           $.each(data[indexR], function(indexC, valueC) {
-              if(data.length)
-            txt=valueC+", "+txt;
+            contador=contador+1;
+            if(contador===1){
+              txt=valueC
+            }else{
+              txt=valueC+", "+txt;
+            }
           });
         });
+
         $("#inputxls").val(txt);
       });
     };
