@@ -20,7 +20,7 @@ class CreateTests extends AbstractMigration
         ]);
         $table->addColumn('name', 'string', [
             'default' => null,
-            'limit' => 40,
+            'limit' => 60,
             'null' => false,
         ]);
         $table->addColumn('description', 'string', [
