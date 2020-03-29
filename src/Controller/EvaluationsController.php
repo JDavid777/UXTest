@@ -109,8 +109,17 @@ class EvaluationsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
-    public function llenarEncuesta()
+    public function llenarEncuesta($token)
     {
+        $this->loadModel("UsersTests");
+        $evaluation = $this->Evaluations->find()
+            ->where(['token' => $token])
+            ->first();
+        
+        $user_test = $this->UsersTests->find()
+        ->where(['id' => $evaluation->users_tests_id])
+        ->first();
+        $this->set('url_pagina', $user_test->url_app);
         $this->render();
     }
 

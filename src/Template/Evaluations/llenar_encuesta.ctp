@@ -264,7 +264,8 @@
 						</div><!-- /Wizard container -->
 					</div> <!-- col-md 5 -->
 					<div class="col-md-7">
-						<iframe src="https://www.w3schools.com" frameborder="0"></iframe>
+						<a href="http://<?=$url_pagina?>" target="_blank"> Pagina </a>
+						<iframe src="https://<?=$url_pagina?>" frameborder="0"></iframe>
 					</div>
 				</div><!-- row -->
 
