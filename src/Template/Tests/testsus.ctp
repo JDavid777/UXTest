@@ -51,7 +51,7 @@
 
 						<!-- Search input -->
 						<ul class="menu panel-group" id="accordion" aria-multiselectable="true">
-							<li><span class="d-none d-md-inline-block ml-1 text-white"><?$this->Auth->user('username')?><i class="mdi mdi-chevron-down"></i> </span></li>
+							<li><span class="d-none d-md-inline-block ml-1 text-white"><?= $this->request->getSession()->read('Auth.User.first_name'). " " .$this->request->getSession()->read('Auth.User.last_name') ?><i class="mdi mdi-chevron-down"></i> </span></li>
 							<li><a href="">Perfil</a></li>
 							<li><a href="../users/logout">Salir</a></li>
 						</ul>
