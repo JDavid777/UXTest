@@ -57,7 +57,7 @@ class TestsController extends AppController
                     $data = array(
                         'email' => $correo,
                         'token' => $token,
-                        'active' => 1,
+                        'active' => 0,
                         'users_tests_id' => $user_test->id
                     );
                     $evaluation = $this->Evaluations->patchEntity($evaluation, $data);

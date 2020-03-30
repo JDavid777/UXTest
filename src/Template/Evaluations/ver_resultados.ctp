@@ -86,17 +86,17 @@
 						<tbody>
 							<?php 
 							foreach ($rows1 as $row):?>
-								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+								<tr>									
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
 					  </table>
 				</div>
-				<?php /*?><p><hr>
+				<?php ?><p><hr>
                 </p>
 				<div class="table-responsive-md">
                     <h4 class="text-left"><b>Pregunta 2: </b>Encuentro este sistema innecesariamente complejo</h4>
@@ -113,10 +113,10 @@
 							<?php 
 							foreach ($rows2 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
@@ -139,10 +139,10 @@
 							<?php 
 							foreach ($rows3 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
@@ -165,10 +165,10 @@
 							<?php 
 							foreach ($rows4 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
@@ -191,10 +191,10 @@
 							<?php 
 							foreach ($rows5 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
@@ -217,10 +217,10 @@
 							<?php 
 							foreach ($rows6 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
@@ -243,10 +243,10 @@
 							<?php 
 							foreach ($rows7 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
@@ -269,10 +269,10 @@
 							<?php 
 							foreach ($rows8 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
@@ -295,10 +295,10 @@
 							<?php 
 							foreach ($rows9 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
@@ -321,15 +321,15 @@
 							<?php 
 							foreach ($rows10 as $row):?>
 								<tr>
-									<td><?php echo $row['location']?></td>
-									<td><?php echo $row['age']?></td>
-									<td><?php echo $row['gender']?></td>
-									<td><?php echo $row['value']?></td>
+									<td><?php echo $row[0]['location']?></td>
+									<td><?php echo $row[0]['age']?></td>
+									<td><?php echo $row[0]['gender']?></td>
+									<td><?php echo $row[0]['value']?></td>
 								</tr>
 							<?php endforeach?>
 						</tbody>
 					  </table>
-				</div>*/?>
+				</div>
 			</div> <!-- end container -->
 		</div>
 

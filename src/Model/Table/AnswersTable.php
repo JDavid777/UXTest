@@ -89,9 +89,9 @@ class AnswersTable extends Table
 
     public function findAnswers(\Cake\ORM\Query $query, array $options)
     {
-        $evaluations_id = $options['evaluation_id'];
+        $evaluation_id = $options['evaluation_id'];
         $question_id = $options['question_id'];
-        return $this->find('all')
+        return $this->find()
             ->join([ 'E' => [
                 'table' => 'Evaluations',
                 'type' => 'INNER',
@@ -100,7 +100,7 @@ class AnswersTable extends Table
             ->select(['value'=>'Answers.value','age'=> 'E.age','gender'=> 'E.gender','location'=> 'E.location',
             'question'=>'Answers.question_id'])            
             ->where(['and' => [
-                'Answers.evaluation_id' => $evaluations_id,
+                'Answers.evaluation_id' => $evaluation_id,
                 'Answers.question_id' => $question_id
             ]])
             ->toArray();
