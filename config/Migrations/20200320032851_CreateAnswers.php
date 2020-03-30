@@ -27,8 +27,8 @@ class CreateAnswers extends AbstractMigration
             'null' => false,
         ]);
         
-        $table->addColumn('users_tests_id', 'integer')->addForeignKey('users_tests_id', 'users_tests','id', ['delete'=>'CASCADE', 'update'=>'CASCADE']);
-        $table->addColumn('question_id', 'integer')->addForeignKey('question_id', 'questions','id', ['delete'=>'CASCADE', 'update'=>'CASCADE']);
+        $table->addColumn('evaluation_id', 'integer')->addForeignKey('evaluation_id', 'evaluations','id', ['delete'=>'CASCADE', 'update'=>'CASCADE']);
+        $table->addColumn('question_id', 'string')->addForeignKey('question_id', 'questions','id', ['delete'=>'CASCADE', 'update'=>'CASCADE']);
         $table->create();
     }
 }

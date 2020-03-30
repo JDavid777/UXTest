@@ -67,7 +67,8 @@
 		<div class="wrapper1">
 			
 				<p class="h1 text-center">¡Correo enviado exitosamente!</p>
-			
+				<br>
+				<br>
 		</div> <!-- end container -->
 	</div>
 

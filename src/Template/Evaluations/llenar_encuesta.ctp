@@ -50,7 +50,7 @@
 					<div class="col-md-5">
 						<h1 class="text-center"><strong>Test SUS</strong></h1>
 						<div id="wizard_container">
-							<?= $this->Form->create(null, ['url' => ['action' => 'enviar_encuesta']]) ?>
+							<?= $this->Form->create(null, ['url' => ['action' => 'enviar_encuesta/'.$token]]) ?>
 							<input id="website" name="website" type="text" value="">
 							<div id="middle-wizard">
 								<div class="step">
@@ -74,7 +74,7 @@
 									<div class="form-group radio_questions ">
 
 										<?= $this->Form->radio(
-											'rtas-pregunta1',
+											'rtas-pregunta2',
 											[
 												['value' => '1', 'text' => ' 1. Totalmente en desacuerdo'],
 												['value' => '2', 'text' => ' 2. En desacuerdo'],
@@ -138,7 +138,7 @@
 									<div class="form-group radio_questions ">
 
 										<?= $this->Form->radio(
-											'rtas-pregunta1',
+											'rtas-pregunta6',
 											[
 												['value' => '1', 'text' => ' 1. Totalmente en desacuerdo'],
 												['value' => '2', 'text' => ' 2. En desacuerdo'],
@@ -154,7 +154,7 @@
 									<div class="form-group radio_questions ">
 
 										<?= $this->Form->radio(
-											'rtas-pregunta1',
+											'rtas-pregunta7',
 											[
 												['value' => '1', 'text' => ' 1. Totalmente en desacuerdo'],
 												['value' => '2', 'text' => ' 2. En desacuerdo'],
@@ -170,7 +170,7 @@
 									<div class="form-group radio_questions ">
 
 										<?= $this->Form->radio(
-											'rtas-pregunta1',
+											'rtas-pregunta8',
 											[
 												['value' => '1', 'text' => ' 1. Totalmente en desacuerdo'],
 												['value' => '2', 'text' => ' 2. En desacuerdo'],
@@ -186,7 +186,7 @@
 									<div class="form-group radio_questions ">
 
 										<?= $this->Form->radio(
-											'rtas-pregunta1',
+											'rtas-pregunta9',
 											[
 												['value' => '1', 'text' => ' 1. Totalmente en desacuerdo'],
 												['value' => '2', 'text' => ' 2. En desacuerdo'],
@@ -198,11 +198,11 @@
 									</div>
 								</div><!-- step 9-->
 								<div class="step">
-									<h3 class="main_question"><strong>10/11</strong>Necesité aprender muchas cosas antes de ser capaz de usar este dispositivo</h3>
+									<h3 class="main_question"><strong>10/11</strong>Necesité aprender muchas cosas antes de ser capaz de usar este sitio web</h3>
 									<div class="form-group radio_questions ">
 
 										<?= $this->Form->radio(
-											'rtas-pregunta1',
+											'rtas-pregunta10',
 											[
 												['value' => '1', 'text' => ' 1. Totalmente en desacuerdo'],
 												['value' => '2', 'text' => ' 2. En desacuerdo'],
@@ -234,17 +234,6 @@
 												); ?>
 											</div>
 
-											<h4>Selecciona tu país</h4>
-											<div class="form-group select">
-												<div class="styled-select">
-													<?= $this->Form->select(
-														'Pais',
-														[1, 2, 3, 4, 5],
-														['empty' => '(Selecciona un pais)']
-													); ?>
-												</div>
-											</div>
-
 										</div>
 									</div>
 								</div>
@@ -264,8 +253,8 @@
 						</div><!-- /Wizard container -->
 					</div> <!-- col-md 5 -->
 					<div class="col-md-7">
-						<a href="http://<?=$url_pagina?>" target="_blank"> Pagina </a>
-						<iframe src="https://<?=$url_pagina?>" frameborder="0"></iframe>
+						<a href="http://<?=$url_pagina?>" target="_blank"> Si no puede visualizar correctamente la página, de clic aquí</a>
+						<iframe src="https://<?=$url_pagina?>" frameborder="0" height="550"></iframe>
 					</div>
 				</div><!-- row -->
 

@@ -69,7 +69,7 @@
 									<a href="testsus">
 										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="test">
 										<p class="h4 mb-0 explore-item__title text-center">Test SUS
-											<button type="button" class="btn btn-light btn-circle" data-toggle="tooltip" data-placement="top" title="System Usability Scale. Escala para medir la usabilidad de un sistema a través de 10 preguntas, que son puntuadas de 1 a 5.">
+											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="System Usability Scale. Escala para medir la usabilidad de un sistema a través de 10 preguntas, que son puntuadas de 1 a 5.">
 													?
 											</button>
 										</p>
@@ -84,7 +84,7 @@
 									<a href="">
 										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test ASQ
-											<button type="button" class="btn btn-light btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
+											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 														?
 												</button>
 										</p>
@@ -100,7 +100,7 @@
 									<a href="testsus1.html">
 										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test NASA TLX
-											<button type="button" class="btn btn-light btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
+											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 												?
 											</button>
 										</p>
@@ -117,7 +117,7 @@
 									<a href="testsus1.html">
 										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test SEQ
-											<button type="button" class="btn btn-light btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
+											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 												?
 											</button>
 										</p>
@@ -133,7 +133,7 @@
 									<a href="testsus1.html">
 										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test SMEQ
-											<button type="button" class="btn btn-light btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
+											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 												?
 											</button>
 										</p>
@@ -149,7 +149,7 @@
 									<a href="testsus1.html">
 										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test UME
-											<button type="button" class="btn btn-light btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
+											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 												?
 											</button>
 										</p>
