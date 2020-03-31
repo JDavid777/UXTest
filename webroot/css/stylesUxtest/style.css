@@ -223,7 +223,7 @@ iframe {
   width: 100%;
   overflow: hidden;
   height: 44px;
-  background: #fff url(../img/arrow_down.svg) no-repeat right center;
+  background: #fff url(../img/imagesUxtest/arrow_down.svg) no-repeat right center;
   border: 2px solid #e8ebed;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -956,7 +956,7 @@ header .button-header .custom-btn:hover {
 /* 02. Owl Nav
    ==================================== */
 .owl-carousel {
-  cursor: url(../images/drag.png) 16 9, ew-resize;
+  cursor: url(../../img/imagesUxtest/drag.png) 16 9, ew-resize;
 }
 .owl-nav {
   position: static;
@@ -1146,7 +1146,7 @@ header .button-header .custom-btn:hover {
    ==================================== */
 .pricing-table {
   padding: 80px 0 30px 0;
-  background: url(../images/bg-blue.png) no-repeat center;
+  background: url(../../img/imagesUxtest/bg-blue.png) no-repeat center;
   background-size: cover;
   margin-bottom: 130px;
 }
@@ -1274,7 +1274,7 @@ header .button-header .custom-btn:hover {
   text-align: left;
   display: inline-block;
   margin-bottom: 34px;
-  background: url(../images/check.svg) no-repeat;
+  background: url(../../img/imagesUxtest/check.svg) no-repeat;
   padding-left: 32px;
 }
 .info-pricing ul li.button {
@@ -1382,10 +1382,10 @@ header .button-header .custom-btn:hover {
   display: none;
 }
 .user-slider .owl-prev {
-  background: url(../images/arrow-left-light.png) no-repeat;
+  background: url(../../img/imagesUxtest/arrow-left.png) no-repeat;
 }
 .user-slider .owl-next {
-  background: url(../images/arrow-right-light.png) no-repeat;
+  background: url(.../../img/imagesUxtest/arrow-right.png) no-repeat;
 }
 /* 08. Search Domain
    ==================================== */
@@ -1489,7 +1489,7 @@ header .button-header .custom-btn:hover {
   font-size: 14px;
   font-family: "HelveticaNeue-Medium", serif;
   text-transform: uppercase;
-  background: transparent url(../images/down.png) no-repeat 86% 33%;
+  background: transparent url(../img/imagesUxtest/down.png) no-repeat 86% 33%;
 }
 .search-domain form .select-options {
   top: 45px;
@@ -1563,7 +1563,7 @@ header .button-header .custom-btn:hover {
 /* 10. Breadcrumbs
    ==================================== */
 .breadcrumbs {
-  background: url(../images/breadcrumbs.jpg) no-repeat center;
+  background: url(../img/imagesUxtest/breadcrumbs.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
   padding: 234px 0 195px 0;
@@ -1839,7 +1839,7 @@ footer {
   margin-top: -3px;
   padding-top: 65px;
   background-size: cover;
-  background: url(../images/bg-team.png) no-repeat;
+  background: url(../img/imagesUxtest/bg-team.png) no-repeat;
 }
 .about-block .hosting-software {
   margin-bottom: 90px;
@@ -2399,7 +2399,7 @@ footer {
   background-color: #fff;
 }
 .contact .bg-form {
-  background: url(../images/bg-form.jpg) no-repeat;
+  background: url(../img/imagesUxtes/bg-form.jpg) no-repeat;
   background-size: cover;
   padding-top: 171px;
   padding-bottom: 255px;
@@ -2793,7 +2793,7 @@ footer {
   background-color: rgba(119, 130, 170, 0.2);
 }
 .content-order input[type="radio"]:checked + label span {
-  background: url(../../images/radio-check.png) no-repeat;
+  background: url(../img/imagesUxtest/radio-check.png) no-repeat;
 }
 /* 03. Total Order
    ==================================== */
@@ -2990,7 +2990,7 @@ footer {
 }
 .account-details form .select {
   line-height: 42px;
-  background: url(../images/down-select.png) no-repeat 97% 50%;
+  background: url(../img/imagesUxtest/down-select.png) no-repeat 97% 50%;
 }
 .account-details form select {
   width: 100%;
@@ -3074,7 +3074,7 @@ footer {
   margin-bottom: 112px;
   padding: 160px 0 0;
   background-size: cover;
-  background: #f6fafd url(../images/choice-plan.png) no-repeat top;
+  background: #f6fafd url(../img/imagesUxtest/choice-plan.png) no-repeat top;
 }
 .choice-plan h2 {
   font-size: 46px;
@@ -3233,7 +3233,7 @@ footer {
 /* 05. Info Plans
    ==================================== */
 .info-plans {
-  background: #f6fafd url(../images/bg-servise-2.png) no-repeat top;
+  background: #f6fafd url(../img/imagesUxtest/bg-servise-2.png) no-repeat top;
   padding-top: 268px;
 }
 .info-plans .title-head {
@@ -3301,7 +3301,7 @@ footer {
   padding: 260px 0 175px 0;
   margin-bottom: 80px;
   background-size: contain;
-  background: url(../images/bottom-info-plans.png) no-repeat center;
+  background: url(../img/imagesUxtest/bottom-info-plans.png) no-repeat center;
 }
 .bottom-info-plans .title-head {
   color: #fff;
@@ -3342,7 +3342,7 @@ footer {
 /* 07. Service Page Dark Color
    ==================================== */
 .dark-color .choice-plan {
-  background: #f5fafd url(../images/choice-plan2.png) no-repeat top;
+  background: #f5fafd url(../img/imagesUxtest/choice-plan2.png) no-repeat top;
 }
 .dark-color .choice-plan .nav-tabs li {
   border-color: #5c41c4;
@@ -3357,7 +3357,7 @@ footer {
   color: #c3b5f7;
 }
 .dark-color .bottom-info-plans {
-  background: url(../images/bottom-info-plans2.png) no-repeat center;
+  background: url(../img/imagesUxtest/bottom-info-plans2.png) no-repeat center;
 }
 .dark-color header .button-header .custom-btn.login {
   background-color: #675abf;
@@ -3365,7 +3365,7 @@ footer {
 /* 08. Service Page Images Color
    ==================================== */
 .images-color .choice-plan {
-  background: url(../images/choice-plan3.png) no-repeat top;
+  background: url(../img/imagesUxtest/choice-plan3.png) no-repeat top;
 }
 .images-color .choice-plan .nav-tabs li {
   border-color: #7e94bb;
@@ -3380,7 +3380,7 @@ footer {
   background: rgba(255, 255, 255, 0.2) none;
 }
 .images-color .bottom-info-plans {
-  background: url(../images/bottom-info-plans3.png) no-repeat center;
+  background: url(../img/imagesUxtest/bottom-info-plans3.png) no-repeat center;
 }
 /*=====  End of 16. Service Page Style  ======*/
 /*=============================================
@@ -3615,7 +3615,7 @@ footer {
   width: 100%;
   padding-bottom: 37px;
   border-bottom: 2px solid #dee6eb;
-  background: url(../images/down-select.png) no-repeat 97% 50%;
+  background: url(../img/imagesUxtest/down-select.png) no-repeat 97% 50%;
 }
 .sign-up .select .select-options:before {
   left: 15%;

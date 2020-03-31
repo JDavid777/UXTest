@@ -9,7 +9,7 @@
 					</div>
 					<div class="col-md-1">
 						<ul class="menu">
-							<li><a href="../evaluations/ver_resultados">Resultados</a></li>
+							<li><a href="../evaluations/resultados">Resultados</a></li>
 						</ul>
 					</div>
 					<div class="col-md-7">

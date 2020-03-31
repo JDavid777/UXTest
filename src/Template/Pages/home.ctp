@@ -74,7 +74,7 @@
 			<div class="inside">
 				<h2>¡Bienvenido a UXTest!</h2>
 				<p>Prueba la usabilidad de tu aplicación web con nosotros. No pierdas más clientes.</p>
-				<a href="service-page.html" class="custom-btn">¡Contáctanos ahora!</a>
+				<a href="" class="custom-btn">¡Contáctanos ahora!</a>
 			</div><!--inside-->
 		</div>
 	</div>

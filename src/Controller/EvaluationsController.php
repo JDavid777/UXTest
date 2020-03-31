@@ -73,10 +73,12 @@ class EvaluationsController extends AppController
      */
     public function edit($id = null)
     {
+        echo("Entre al edit");
         $evaluation = $this->Evaluations->get($id, [
             'contain' => [],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
+            date_default_timezone_set('America/Bogota');
             $time = date('Y-m-d H:i:s');
             //$ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
            /* $ip = '186.148.188.186';
@@ -88,11 +90,12 @@ class EvaluationsController extends AppController
                 'age' => (int) $this->request->getData('edad'),
                 'gender' => $this->request->getData('genero'),
                 'date' => $time,
-                'location' => $pais,
-                'users_tests_id' => 1
+                'location' => $pais
             );
             $evaluation = $this->Evaluations->patchEntity($evaluation, $data);
+            debug($evaluation);
             if ($this->Evaluations->save($evaluation)) {
+                echo "Si guarde, gracias";
                 return True;
             }else{
                 return False;
@@ -141,8 +144,7 @@ class EvaluationsController extends AppController
         $evaluation = $this->Evaluations->find()
             ->where(['token' => $token])
             ->first();
-
-        $this->edit($evaluation->id);
+        $this->edit($evaluation->id);   
         
         if ($this->request->is(['post'])) {
             if ($this->Evaluations->save($evaluation)) {
@@ -248,28 +250,39 @@ class EvaluationsController extends AppController
 
                 $this->render();
             }
-            $this->Flash->error(__('No se pudo guardar las respuestas. Intente nuevamente.'));
+            //$this->Flash->error(__('No se pudo guardar las respuestas. Intente nuevamente.'));
         }
         $usersTests = $this->Evaluations->UsersTests->find('list', ['limit' => 200]);
         $this->set(compact('evaluation', 'usersTests'));
+        $this->render();
         
     }
-
+    
     public function verResultados()
     {
+        
+        $this->request->allowMethod('ajax');
+        $url = $this->request->query('url');
         $this->loadModel("UsersTests");
         $this->loadModel("Answers");
         
         $user_id = $this->Auth->user('id');
-        $usertest = $this->UsersTests->find()        
-            ->where(['user_id' => $user_id],
-                    ['test_id' => 'sus_test'])
-            ->first();
         
         $evaluations_id = $this->Evaluations->find()
-            ->where(['users_tests_id' => $usertest->id])
-            ->all();
-               
+        ->join([ 'A' => [
+            'table' => 'Answers',
+            'type' => 'INNER',
+            'conditions' => 'Evaluations.id = A.evaluation_id',
+        ]])
+        ->join([ 'UE' => [
+            'table' => 'Users_Tests',
+            'type' => 'INNER',
+            'conditions' => 'Evaluations.users_tests_id = UE.id',
+        ]])
+        ->select(['id'=>'Evaluations.id'])  
+        ->distinct(['Evaluations.id'])          
+        ->where(['and'=> ['UE.user_id' => $user_id, 'UE.url_app' => $url]]);
+                
         $answers1 = array();
         $answers2 = array();
         $answers3 = array();
@@ -316,13 +329,17 @@ class EvaluationsController extends AppController
         $this->set('rows8', $answers8);
         $this->set('rows9', $answers9);
         $this->set('rows10', $answers10);
-        
+    }
+    public function resultados(){
         $this->render();
     }
     public function beforeFilter(\Cake\Event\Event $event)
     {
         $this->Auth->allow("llenarEncuesta");
         $this->Auth->allow("enviarEncuesta");
+        if ($this->request->is('ajax')) {
+            $this->layout = 'ajax';
+        }
     }
 
     
