@@ -64,12 +64,13 @@ class TestsController extends AppController
                     $this->Evaluations->save($evaluation);
 
                     $urlEncuesta = $urlbase.$controlador.$token;
-                    $email->setFrom(['applicationuxtest@gmail.com' => 'Encuesta de UXTest'])
-                        ->setTo($correo)
-                        ->setSubject('Test SUS')
-                        ->send("¡Hola, nos alegra contactarte de nuevo!\n $mensaje
-                        \n Accede a la encuesta: $urlEncuesta
-                        \n Fecha límite: ". $fecha);
+                    $email->setEmailFormat('html')
+                    ->setTo($correo)
+                    ->setSubject('Test SUS')
+                    ->setViewVars(['url' => $urlEncuesta, 'mensaje' => $mensaje, 'fecha' => $fecha])
+                    ->setFrom(['applicationuxtest@gmail.com' => 'Encuesta de UXTest'])  
+                    ->setTemplate('email')
+                    ->send();  
                 }
 
             }

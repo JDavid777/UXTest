@@ -12,10 +12,10 @@
 							<li><a href="testsdisponibles">Home</a></li>
 						</ul>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-7">
 					
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-2">
 						<div class="menu-extras topbar-custom navbar p-0">
 							<!-- Search input -->
 							<ul class="list-inline ml-auto mb-0">
@@ -24,7 +24,7 @@
 								<li class="list-inline-item dropdown notification-list">
 									<a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 										<img class="smalluser" src="/UXTest/img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
-										<span class="d-none d-md-inline-block text-white "><?= $this->request->getSession()->read('Auth.User.first_name'). " " .$this->request->getSession()->read('Auth.User.last_name') ?><i class="mdi mdi-chevron-down"></i> </span>
+										<span class="d-none d-md-inline-block text-white "><?= $this->request->getSession()->read('Auth.User.first_name')?><i class="mdi mdi-chevron-down"></i> </span>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
 										<a class="dropdown-item" href="#"><i class="dripicons-user text-muted"></i> Perfil</a>
@@ -64,16 +64,15 @@
 		<!--===================== End of Header ========================-->
 		<div class="wrapper1">
 			<div class="container-fluid">
-
-				<p class="h1 text-center">Test SUS</p>
 				<div class="row ">
-
+					
 					<div class="col-md-5 ">
+					<p class="h1 text-center">Test SUS</p>
 						<img class="media-object bigimg center-block" src="/UXTest/img/imagesUxtest/icon-testsus.png" alt="...">
 					</div>
-
+					
 					<div class="col-md-5 justify-content-center">
-						
+						<p class="h1 text-center">Ingresa los datos</p>	
 						<?= $this->Form->create(null, ['url' => ['action' => 'enviar_email']])?>
 							<div class="form-group">
 								<?= $this->Form->input('text',['class'=> 'form-control','name'=> 'url', 'placeholder'=> 'URL','label' => 'URL página a evaluar', 'required']);?>
@@ -94,10 +93,11 @@
 							<?= $this->Form->button('Enviar Encuesta',['class'=> 'btn btn-primary pull-right']);?>
 
 						<?= $this->Form->end()?>
-						
+						<hr>
+						<hr>
+						<hr>
 					</div>
-
-
+					
 				</div>
 
 			</div>

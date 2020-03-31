@@ -1,28 +1,57 @@
-<?php
-/**
- * @var \App\View\AppView $this
- * @var \Cake\Datasource\EntityInterface $user
- */
-?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="users form large-9 medium-8 columns content">
-    <?= $this->Form->create($user) ?>
-    <fieldset>
-        <legend><?= __('Add User') ?></legend>
-        <?php
-            echo $this->Form->control('first_name');
-            echo $this->Form->control('last_name');
-            echo $this->Form->control('username');
-            echo $this->Form->control('password');
-            echo $this->Form->control('role');
-            echo $this->Form->control('active');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
-</div>
+<body class="login-page">
+<div class="wrapper">
+	<!--===================== Header ========================-->
+    <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo"><a href="/UXTest/"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+                </div>
+				<div class="col-md-6">
+                    <ul class="menu">
+                            <li><a href="/UXTest/">Home</a></li>
+                            <li><a href="">Acerca de nosotros</a></li>
+                            <li><a href="">Contáctanos</a></li>
+                        </ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-block">
+			<div class="logo-mobile"><a href="/UXTest/"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+			<a href="#" class="mobile-menu-btn"><span></span></a>
+			<div class="mobile-menu">
+				<div class="inside">
+					<div class="logo">
+						<a href="/UXTest/"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
+					</div><!--logo-->
+					<ul class="menu panel-group" id="accordion" aria-multiselectable="true">
+						<li><a href="/UXTest/">Home</a></li>
+						<li><a href="">Acerca de nosotros</a></li>
+						<li><a href="">Contáctanos</a></li>
+					</ul><!--menu-->
+				</div><!--inside-->
+			</div><!--mobile-menu-->
+		</div>
+	</header>
+<!--===================== End of Header ========================-->
+
+<div class="login-bg animatedParent">
+		<?= $this->Form->create($user)?>
+			<h2>Registrar</h2>
+            <div class="animated growIn">
+				<div class="form-group">
+			        <?= $this->Form->control('idn',['class'=> 'form-control input-lg','placeholder'=> 'Identificacion','label' => false, 'required']);?>
+                    <?= $this->Form->control('first_name',['class'=> 'form-control input-lg','placeholder'=> 'Nombres','label' => false, 'required']);?>  
+                    <?= $this->Form->control('last_name',['class'=> 'form-control input-lg','placeholder'=> 'Apellidos','label' => false, 'required']);?>
+                    <?= $this->Form->control('username',['class'=> 'form-control input-lg','placeholder'=> 'Username','label' => false, 'required']);?> 
+                    <?= $this->Form->control('password',['class'=> 'form-control input-lg','placeholder'=> 'Contrasena','label' => false, 'required']);?>
+                    <?= $this->Form->control('role',['class'=> 'form-control input-lg','placeholder'=> 'Rol','label' => false, 'required']);?> 
+                    <?= $this->Form->control('active',['class'=> 'form-control input-lg','placeholder'=> 'Activo','label' => false, 'required']);?> 
+				</div>
+			    <?= $this->Form->button('Registrar',['class' => 'btn btn-primary form-group']);?>     
+            </div>          
+
+        <?= $this->Form->end() ?>
+	</div>
+
+</body>

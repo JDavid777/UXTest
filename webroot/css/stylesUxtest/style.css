@@ -634,6 +634,7 @@ header .row {
 }
 header .logo img {
   max-width: 144px;
+  margin-top: -10px;
 }
 header .menu {
   text-align: right;
@@ -2519,6 +2520,9 @@ footer {
   font-size: 15px;
   letter-spacing: 1px;
   color: #8198a6;
+}
+.login-page header{
+  margin-bottom: 20px;
 }
 .form-contact form,
 .login-bg form,

@@ -7,7 +7,7 @@
 				<div class="col-md-2">
 					<div class="logo"><a href="/UXTest/"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
 				</div>
-				<div class="col-md-7">
+				<div class="col-md-6">
 					<ul class="menu">
 						<li><a href="/UXTest/">Home</a></li>
 						<li><a href="">Acerca de nosotros</a></li>

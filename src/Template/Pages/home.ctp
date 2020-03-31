@@ -26,16 +26,20 @@
 			<div class="col-md-2">
 				<div class="logo"><a href="home.ctp"><img src="img/imagesUxtest/logoP.png" alt="logo"></a></div>
 			</div>
-			<div class="col-md-7">
+			<div class="col-md-6">
 				<ul class="menu">
 					<li><a href="">Home</a></li>
 					<li><a href="">Acerca de nosotros</a></li>
 					<li><a href="">Contactános</a></li>
 				</ul>
 			</div>
+			<div class="col-md-1">
+				
+			</div>
 			<div class="col-md-3">
 				<div class="button-header">
-                    <a href="users/login" class="custom-btn login">Login</a>
+					<a href="users/login" class="custom-btn login">Login</a>
+					<a href="users/add" class="custom-btn">Registrar</a>
 					<!--<a href="sign-up.html" class="custom-btn">Sign Up</a>-->
 				</div>
 			</div>

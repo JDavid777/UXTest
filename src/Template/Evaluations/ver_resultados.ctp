@@ -5,16 +5,16 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<div class="logo"><a href="testsdisponibles"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+						<div class="logo"><a href="../tests/testsdisponibles"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-6">
 						<ul class="menu">
                             <li><a href="../tests/testsdisponibles">Home</a></li>
                             <li><a href="../tests/testsus">Crear nueva encuesta</a></li>
 						</ul>
 					</div>
-					<div class="col-md-6">
-					
+					<div class="col-md-1">
+
 					</div>
 					<div class="col-md-3">
 						<div class="menu-extras topbar-custom navbar p-0">
@@ -25,7 +25,7 @@
 								<li class="list-inline-item dropdown notification-list">
 									<a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 										<img class="smalluser" src="/UXTest/img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
-										<span class="d-none d-md-inline-block text-white "><?= $this->request->getSession()->read('Auth.User.first_name'). " " .$this->request->getSession()->read('Auth.User.last_name') ?><i class="mdi mdi-chevron-down"></i> </span>
+										<span class="d-none d-md-inline-block text-white "><?= $this->request->getSession()->read('Auth.User.first_name')?><i class="mdi mdi-chevron-down"></i> </span>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
 										<a class="dropdown-item" href="#"><i class="dripicons-user text-muted"></i> Perfil</a>
