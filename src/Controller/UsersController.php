@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Auth\DefaultPasswordHasher;
 
 /**
  * Users Controller
@@ -46,9 +47,12 @@ class UsersController extends AppController
      */
     public function add()
     {
+        $hasher = new DefaultPasswordHasher();
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
+            $passwdHasheado = $hasher->hash($this->request->getData('password'));
+            $user->password = $passwdHasheado;
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 

@@ -156,6 +156,7 @@ button:focus {
   outline: none;
 }
 table {
+  width: 90%;
   border-collapse: collapse;
   border-spacing: 0;
 }

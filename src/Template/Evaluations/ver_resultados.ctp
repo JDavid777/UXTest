@@ -74,7 +74,7 @@
                 </p>
 				<div class="table-responsive-md">
                     <h4 class="text-left"><b>Pregunta 1: </b>Creo que usaría este sistema con frecuencia</h4>
-                    <table class="table table-striped">
+                    <table class="table table-sm table-striped">
 						<thead>
 						  <tr>
 							<th scope="col">Pais</th>
@@ -85,14 +85,17 @@
 						</thead>
 						<tbody>
 							<?php 
-							foreach ($rows1 as $row):?>
-								<tr>									
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							if(empty($rows1)):
+								foreach ($rows1 as $row):?>
+									<tr>									
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php 
+								endforeach;
+							endif;?>
 						</tbody>
 					  </table>
 				</div>
@@ -111,14 +114,17 @@
 						</thead>
 						<tbody>
 							<?php 
-							foreach ($rows2 as $row):?>
-								<tr>
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							if(empty($rows2)):
+								foreach ($rows2 as $row):?>
+									<tr>
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php 
+								endforeach;
+							endif;?>
 						</tbody>
 					  </table>
 				</div>
@@ -137,14 +143,17 @@
 						</thead>
 						<tbody>
 							<?php 
-							foreach ($rows3 as $row):?>
-								<tr>
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							if(empty($rows3)):
+								foreach ($rows3 as $row):?>
+									<tr>
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php 
+								endforeach;
+							endif?>
 						</tbody>
 					  </table>
 				</div>
@@ -163,14 +172,17 @@
 						</thead>
 						<tbody>
 							<?php 
-							foreach ($rows4 as $row):?>
-								<tr>
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							if(empty($rows4)):
+								foreach ($rows4 as $row):?>
+									<tr>
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php 
+								endforeach;
+							endif?>
 						</tbody>
 					  </table>
 				</div>
@@ -189,14 +201,17 @@
 						</thead>
 						<tbody>
 							<?php 
-							foreach ($rows5 as $row):?>
-								<tr>
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							if(empty($rows5)):
+								foreach ($rows5 as $row):?>
+									<tr>
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php 
+								endforeach;
+							endif?>
 						</tbody>
 					  </table>
 				</div>
@@ -215,14 +230,17 @@
 						</thead>
 						<tbody>
 							<?php 
-							foreach ($rows6 as $row):?>
-								<tr>
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							if(empty($rows6)):
+								foreach ($rows6 as $row):?>
+									<tr>
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php 
+								endforeach;
+							endif?>
 						</tbody>
 					  </table>
 				</div>
@@ -241,14 +259,17 @@
 						</thead>
 						<tbody>
 							<?php 
-							foreach ($rows7 as $row):?>
-								<tr>
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							if(empty($rows7)):
+								foreach ($rows7 as $row):?>
+									<tr>
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php 
+								endforeach;
+							endif?>
 						</tbody>
 					  </table>
 				</div>
@@ -266,15 +287,18 @@
 						  </tr>
 						</thead>
 						<tbody>
-							<?php 
-							foreach ($rows8 as $row):?>
-								<tr>
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							<?php
+							if(empty($rows8)): 
+								foreach ($rows8 as $row):?>
+									<tr>
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php 
+								endforeach;
+							endif;?>
 						</tbody>
 					  </table>
 				</div>
@@ -293,14 +317,16 @@
 						</thead>
 						<tbody>
 							<?php 
-							foreach ($rows9 as $row):?>
-								<tr>
-									<td><?php echo $row[0]['location']?></td>
-									<td><?php echo $row[0]['age']?></td>
-									<td><?php echo $row[0]['gender']?></td>
-									<td><?php echo $row[0]['value']?></td>
-								</tr>
-							<?php endforeach?>
+							if(empty($rows9)): 
+								foreach ($rows9 as $row):?>
+									<tr>
+										<td><?php echo $row[0]['location']?></td>
+										<td><?php echo $row[0]['age']?></td>
+										<td><?php echo $row[0]['gender']?></td>
+										<td><?php echo $row[0]['value']?></td>
+									</tr>
+								<?php endforeach; 
+							endif;?>
 						</tbody>
 					  </table>
 				</div>
@@ -319,6 +345,7 @@
 						</thead>
 						<tbody>
 							<?php 
+							if(empty($rows10)): 
 							foreach ($rows10 as $row):?>
 								<tr>
 									<td><?php echo $row[0]['location']?></td>
@@ -326,7 +353,7 @@
 									<td><?php echo $row[0]['gender']?></td>
 									<td><?php echo $row[0]['value']?></td>
 								</tr>
-							<?php endforeach?>
+							<?php endforeach; endif;?>
 						</tbody>
 					  </table>
 				</div>
