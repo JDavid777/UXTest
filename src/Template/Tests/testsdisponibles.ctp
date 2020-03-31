@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<div class="logo"><a href=""><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+						<div class="logo"><a href=""><img src="../img/imagesUxtest/logoP.png" alt="logo"></a></div>
 					</div>
 					<div class="col-md-1">
 						<ul class="menu">
@@ -22,7 +22,7 @@
 								<!-- User-->
 								<li class="list-inline-item dropdown notification-list">
 									<a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-										<img class="smalluser" src="/UXTest/img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
+										<img class="smalluser" src="../img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
 										<span class="d-none d-md-inline-block text-white "><?= $this->request->getSession()->read('Auth.User.first_name')?><i class="mdi mdi-chevron-down"></i> </span>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
@@ -38,12 +38,12 @@
 			</div>
 
 			<div class="mobile-block">
-				<div class="logo-mobile"><a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+				<div class="logo-mobile"><a href="index.html"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a></div>
 				<a href="#" class="mobile-menu-btn"><span></span></a>
 				<div class="mobile-menu">
 					<div class="inside">
 						<div class="logo">
-							<a href=""><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
+							<a href=""><img src="../img/imagesUxtest/logoP.png" alt="logo"></a>
 						</div>
 						<!--logo-->
 
@@ -72,7 +72,7 @@
 							<div class="media">
 								<div class="media-middle">
 									<a href="testsus">
-										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="test">
+										<img class="media-object smallimg center-block" src="../img/imagesUxtest/icon-test.png" alt="test">
 										<p class="h4 mb-0 explore-item__title text-center">Test SUS
 											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="System Usability Scale. Escala para medir la usabilidad de un sistema a través de 10 preguntas, que son puntuadas de 1 a 5.">
 													?
@@ -87,7 +87,7 @@
 							<div class="media">
 								<div class="media-middle">
 									<a href="">
-										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
+										<img class="media-object smallimg center-block" src="../img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test ASQ
 											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 														?
@@ -103,7 +103,7 @@
 							<div class="media">
 								<div class="media-middle">
 									<a href="testsus1.html">
-										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
+										<img class="media-object smallimg center-block" src="../img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test NASA TLX
 											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 												?
@@ -120,7 +120,7 @@
 							<div class="media">
 								<div class="media-middle">
 									<a href="testsus1.html">
-										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
+										<img class="media-object smallimg center-block" src="../img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test SEQ
 											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 												?
@@ -136,7 +136,7 @@
 							<div class="media">
 								<div class="media-middle">
 									<a href="testsus1.html">
-										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
+										<img class="media-object smallimg center-block" src="../img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test SMEQ
 											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 												?
@@ -152,7 +152,7 @@
 							<div class="media">
 								<div class="media-middle">
 									<a href="testsus1.html">
-										<img class="media-object smallimg center-block" src="/UXTest/img/imagesUxtest/icon-test.png" alt="...">
+										<img class="media-object smallimg center-block" src="../img/imagesUxtest/icon-test.png" alt="...">
 										<p class="h4 mb-0 explore-item__title text-center">Test UME
 											<button type="button" class="btn-circle" data-toggle="tooltip" data-placement="top" title="Test para medir usabilidad de un sitio web">
 												?

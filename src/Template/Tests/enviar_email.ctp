@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<div class="logo"><a href="testsdisponibles"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+						<div class="logo"><a href="testsdisponibles"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a></div>
 					</div>
 					<div class="col-md-1">
 						<ul class="menu">
@@ -23,7 +23,7 @@
 								<!-- User-->
 								<li class="list-inline-item dropdown notification-list">
 									<a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-										<img class="smalluser" src="/UXTest/img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
+										<img class="smalluser" src="../img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
 										<span class="d-none d-md-inline-block text-white "><?= $this->request->getSession()->read('Auth.User.first_name')?><i class="mdi mdi-chevron-down"></i> </span>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
@@ -40,12 +40,12 @@
 				</div>
 			</div>
 			<div class="mobile-block">
-				<div class="logo-mobile"><a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+				<div class="logo-mobile"><a href="index.html"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a></div>
 				<a href="#" class="mobile-menu-btn"><span></span></a>
 				<div class="mobile-menu">
 					<div class="inside">
 						<div class="logo">
-							<a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
+							<a href="index.html"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a>
 						</div>
 						<!--logo-->
 
