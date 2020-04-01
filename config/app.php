@@ -258,8 +258,8 @@ return [
      */
     'Datasources' => [
         'default' => [
-            'className' => 'mysql://usskju3doeemqb4w:iw3ra2DWJ9hkPDNlKvy4@boghjb5gcpuwjft8ossy-mysql.services.clever-cloud.com:3306/boghjb5gcpuwjft8ossy',
-            //'driver' => Mysql::class,
+            'className' => Connection::class,
+            'driver' => Mysql::class,
             'persistent' => false,
             'host' => 'boghjb5gcpuwjft8ossy-mysql.services.clever-cloud.com',
             /*
