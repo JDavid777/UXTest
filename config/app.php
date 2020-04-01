@@ -258,8 +258,8 @@ return [
      */
     'Datasources' => [
         'default' => [
-            'className' => Connection::class,
-            'driver' => Mysql::class,
+            'className' => 'mysql://usskju3doeemqb4w:iw3ra2DWJ9hkPDNlKvy4@boghjb5gcpuwjft8ossy-mysql.services.clever-cloud.com:3306/boghjb5gcpuwjft8ossy',
+            //'driver' => Mysql::class,
             'persistent' => false,
             'host' => 'boghjb5gcpuwjft8ossy-mysql.services.clever-cloud.com',
             /*
@@ -267,7 +267,7 @@ return [
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
-            //'port' => 'non_standard_port_number',
+            'port' => '3306',
             'username' => 'usskju3doeemqb4w',
             'password' => 'iw3ra2DWJ9hkPDNlKvy4',
             'database' => 'boghjb5gcpuwjft8ossy',
