@@ -68,15 +68,14 @@ class UsersController extends AppController
             );
             
             $user = $this->Users->patchEntity($user, $data);
-            echo $user;
             if ($this->Users->save($user)) {
                 $this->Auth->setUser($user);
                 $this->Flash->success(__('Usuario registrado.'));
 
-                return $this->redirect($this->Auth->redirectUrl());
+                return $this->redirect('/users/login');
             }
             $this->Flash->error(__('No fue posible registrar el usuario. Id o username ya existen'));
-            return $this->redirect(['action' => 'addUser']);
+            return $this->redirect(['action' => 'add']);
         } 
     }
 
@@ -149,6 +148,6 @@ class UsersController extends AppController
     public function initialize()
     {
         parent::initialize();
-        $this->Auth->allow("adduser");
+        $this->Auth->allow("add");
     }
 }
