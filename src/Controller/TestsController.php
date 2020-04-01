@@ -47,7 +47,7 @@ class TestsController extends AppController
                 $correos = explode(", ", $lineaCorreos);
                 $email = new Email('default');
                 //$urlbase = "https://knock-down-titles.000webhostapp.com/";
-                $urlbase = "http://www.uxtest.com/";
+                $urlbase = "http://www.uxtest.com/UXTest/";
                 $controlador = "evaluations/llenarEncuesta/";
                 
 

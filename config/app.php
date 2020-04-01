@@ -213,8 +213,8 @@ return [
             'host' => 'ssl://smtp.gmail.com',
             'port' => 465,
             'timeout' => 30,
-            'username' => 'applicationuxtest@gmail.com',
-            'password' => 'uxtest123.',
+            'username' => 'jmfernanda16@gmail.com',
+            'password' => 'rain162718',
             'client' => null,
             'tls' => null,
             'ssl' => 
