@@ -46,7 +46,7 @@ class TestsController extends AppController
                 $this->UsersTests->save($user_test);
                 $correos = explode(", ", $lineaCorreos);
                 $email = new Email('default');
-                $urlbase = "http://www.uxtest.com/UXTest/";
+                $urlbase = "http://www.uxtest.com/";
                 $controlador = "evaluations/llenarEncuesta/";
                 
 

@@ -49,18 +49,35 @@ class UsersController extends AppController
     {
         $hasher = new DefaultPasswordHasher();
         $user = $this->Users->newEntity();
-        if ($this->request->is('post')) {
-            $user = $this->Users->patchEntity($user, $this->request->getData());
-            $passwdHasheado = $hasher->hash($this->request->getData('password'));
-            $user->password = $passwdHasheado;
-            if ($this->Users->save($user)) {
-                $this->Flash->success(__('The user has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+        if ($this->request->is('post')) {
+            $id = $this->request->getData('idn');
+            $password = $this->request->getData('password');
+            $passwdHasheado = $hasher->hash($password);
+            $nombre = $this->request->getData('first_name');
+            $apellidos = $this->request->getData('last_name');
+            $username = $this->request->getData('username');
+            $data = array(
+                'id' => $id,
+                'first_name' => $nombre,
+                'last_name' => $apellidos,
+                'username' => $username,
+                'password' => $passwdHasheado,
+                'role' => 'user',
+                'active' => 1
+            );
+            
+            $user = $this->Users->patchEntity($user, $data);
+            echo $user;
+            if ($this->Users->save($user)) {
+                $this->Auth->setUser($user);
+                $this->Flash->success(__('Usuario registrado.'));
+
+                return $this->redirect($this->Auth->redirectUrl());
             }
-            $this->Flash->error(__('The user could not be saved. Please, try again.'));
-        }
-        $this->set(compact('user'));
+            $this->Flash->error(__('No fue posible registrar el usuario. Id o username ya existen'));
+            return $this->redirect(['action' => 'addUser']);
+        } 
     }
 
     /**

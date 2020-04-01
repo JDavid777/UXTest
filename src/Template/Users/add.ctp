@@ -36,18 +36,16 @@
 <!--===================== End of Header ========================-->
 
 <div class="login-bg animatedParent">
-		<?= $this->Form->create($user)?>
+		<?= $this->Form->create()?>
 			<h2>Registrar</h2>
             <div class="animated growIn">
 				<div class="form-group">
 			        <?= $this->Form->control('idn',['class'=> 'form-control input-lg','placeholder'=> 'Identificacion','label' => false, 'required']);?>
                     <?= $this->Form->control('first_name',['class'=> 'form-control input-lg','placeholder'=> 'Nombres','label' => false, 'required']);?>  
                     <?= $this->Form->control('last_name',['class'=> 'form-control input-lg','placeholder'=> 'Apellidos','label' => false, 'required']);?>
-                    <?= $this->Form->control('username',['class'=> 'form-control input-lg','placeholder'=> 'Username','label' => false, 'required']);?> 
+                    <?= $this->Formx->control('username',['class'=> 'form-control input-lg','placeholder'=> 'Username','label' => false, 'required']);?> 
                     <?= $this->Form->control('password',['class'=> 'form-control input-lg','placeholder'=> 'Contrasena','label' => false, 'required']);?>
-                    <?= $this->Form->control('role',['class'=> 'form-control input-lg','placeholder'=> 'Rol','label' => false, 'required']);?> 
-                    <?= $this->Form->control('active',['class'=> 'form-control input-lg','placeholder'=> 'Activo','label' => false, 'required']);?> 
-				</div>
+                <</div>
 			    <?= $this->Form->button('Registrar',['class' => 'btn btn-primary form-group']);?>     
             </div>          
 

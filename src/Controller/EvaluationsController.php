@@ -93,7 +93,6 @@ class EvaluationsController extends AppController
                 'location' => $pais
             );
             $evaluation = $this->Evaluations->patchEntity($evaluation, $data);
-            debug($evaluation);
             if ($this->Evaluations->save($evaluation)) {
 
                 return True;
