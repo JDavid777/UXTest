@@ -73,7 +73,7 @@ class EvaluationsController extends AppController
      */
     public function edit($id = null)
     {
-        echo("Entre al edit");
+
         $evaluation = $this->Evaluations->get($id, [
             'contain' => [],
         ]);
@@ -95,7 +95,7 @@ class EvaluationsController extends AppController
             $evaluation = $this->Evaluations->patchEntity($evaluation, $data);
             debug($evaluation);
             if ($this->Evaluations->save($evaluation)) {
-                echo "Si guarde, gracias";
+
                 return True;
             }else{
                 return False;

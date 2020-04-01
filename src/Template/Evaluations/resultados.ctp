@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<div class="logo"><a href="../tests/testsdisponibles"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+						<div class="logo"><a href="../tests/testsdisponibles"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a></div>
 					</div>
 					<div class="col-md-5">
 						<ul class="menu">
@@ -20,11 +20,10 @@
 						<div class="menu-extras topbar-custom navbar p-0">
 							<!-- Search input -->
 							<ul class="list-inline ml-auto mb-0">
-
 								<!-- User-->
 								<li class="list-inline-item dropdown notification-list">
 									<a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-										<img class="smalluser" src="/UXTest/img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
+										<img class="smalluser" src="../img/imagesUxtest/icon-user.png" alt="user" class="rounded-circle">
 										<span class="d-none d-md-inline-block text-white "><?= $this->request->getSession()->read('Auth.User.first_name')?><i class="mdi mdi-chevron-down"></i> </span>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
@@ -41,12 +40,12 @@
 				</div>
 			</div>
 			<div class="mobile-block">
-				<div class="logo-mobile"><a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+				<div class="logo-mobile"><a href="index.html"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a></div>
 				<a href="#" class="mobile-menu-btn"><span></span></a>
 				<div class="mobile-menu">
 					<div class="inside">
 						<div class="logo">
-							<a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
+							<a href="index.html"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a>
 						</div>
 						<!--logo-->
 
@@ -61,21 +60,29 @@
 				</div>
 				<!--mobile-menu-->
 			</div>
-        </header>
-        <div class="container">
-            <div class="">
-                <div class="form-group">
-                    <h3>Ingrese la url del sitio del que quiere ver los resultados</h3>
-                    <?=$this->Form->control('url', ['class' => 'form-control rounded-0']);?> 
-                    <button id="btnCargar" class= 'btn btn-primary pull-right'>Cargar</button>
-                    
-                </div>    
-            </div>
-            <div id="ajax-content">
-            </div>
+		</header>
+		<div class="wrapper1">
+			<div class="container-fluid">
+					<div class="form-group center-block">
+						<div class="row ">
+							<h3 class="text-center">Ingrese la url del sitio para ver los resultados</h3>
+							<div class="col-md-3 col-sm-3"></div>
+							<div class="col-md-6 col-sm-6 ">
 
-            <br>
-        </div>
+								<?=$this->Form->control('url', ['class' => 'form-control rounded-0']);?>
+								<button id="btnCargar" class= 'btn btn-primary pull-right'>Cargar</button>
+							</div>
+							<div class="col-md-3 col-sm-3 ">
+								
+							</div>
+						  </div>
+						</div>
+					</div>			
+				<div id="ajax-content">
+				</div>
+				<br>
+			</div>
+		</div>
         
         <script>
             $('document').ready(function(){

@@ -40,12 +40,12 @@
 				</div>
 			</div>
 			<div class="mobile-block">
-				<div class="logo-mobile"><a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a></div>
+				<div class="logo-mobile"><a href="index.html"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a></div>
 				<a href="#" class="mobile-menu-btn"><span></span></a>
 				<div class="mobile-menu">
 					<div class="inside">
 						<div class="logo">
-							<a href="index.html"><img src="/UXTest/img/imagesUxtest/logoP.png" alt="logo"></a>
+							<a href="index.html"><img src="../img/imagesUxtest/logoP.png" alt="logo"></a>
 						</div>
 						<!--logo-->
 
@@ -68,7 +68,7 @@
 					
 					<div class="col-md-5 ">
 					<p class="h1 text-center">Test SUS</p>
-						<img class="media-object bigimg center-block" src="/UXTest/img/imagesUxtest/icon-testsus.png" alt="...">
+						<img class="media-object bigimg center-block" src="../img/imagesUxtest/icon-testsus.png" alt="...">
 					</div>
 					
 					<div class="col-md-5 justify-content-center">
